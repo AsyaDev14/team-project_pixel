@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
     rel="stylesheet">
   
-  <script type="module" crossorigin src="/team-project_pixel/assets/index-1bbfafd8.js"></script>
-  <link rel="stylesheet" href="/team-project_pixel/assets/index-561e2867.css">
+  <script type="module" crossorigin src="/team-project_pixel/assets/index-9e428e4a.js"></script>
+  <link rel="stylesheet" href="/team-project_pixel/assets/index-68bca8ee.css">
 </head>
 
 <body>
@@ -40,7 +40,8 @@
             <use href="/team-project_pixel/assets/icons-3d98cd86.svg#icon-camera"></use>
           </svg>
         </a>
-        <button class="header-menu-btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="header-menu-btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
+          data-modal-open>
           <svg class="header-menu-icon" width="32" height="22">
             <use href="/team-project_pixel/assets/icons-3d98cd86.svg#icon-menu"></use>
           </svg>
@@ -51,19 +52,21 @@
   </div>
 </header>
 <!-- MOBILE MENU -->
-<div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="btn-close menu-toggle js-close-menu">
-    <svg class="btn-close-icon" width="32" height="32">
-      <use href="/team-project_pixel/assets/icons-3d98cd86.svg#icon-close"></use>
-    </svg>
-  </button>
-  <ul class="mob-nav-list list">
-    <li class="mob-nav-item"><a class="mob-nav-link current link" href="#about-us">About us</a></li>
-    <li class="mob-nav-item"><a class="mob-nav-link link" href="#our-courses">Our courses</a></li>
-    <li class="mob-nav-item"><a class="mob-nav-link link" href="#our-mentors">Our mentors</a></li>
-    <li class="mob-nav-item"><a class="mob-nav-link link" href="#reviews">Reviews</a></li>
-    <li class="mob-nav-item"><a class="mob-nav-link link" href="#contacts">Contacts</a></li>
-  </ul>
+<div class="backdrop is-hidden" data-modal>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="btn-close menu-toggle js-close-menu" data-modal-close>
+      <svg class="btn-close-icon" width="32" height="32">
+        <use href="/team-project_pixel/assets/icons-3d98cd86.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="mob-nav-list list">
+      <li class="mob-nav-item"><a class="mob-nav-link current link" href="#about-us">About us</a></li>
+      <li class="mob-nav-item"><a class="mob-nav-link link" href="#our-courses">Our courses</a></li>
+      <li class="mob-nav-item"><a class="mob-nav-link link" href="#our-mentors">Our mentors</a></li>
+      <li class="mob-nav-item"><a class="mob-nav-link link" href="#reviews">Reviews</a></li>
+      <li class="mob-nav-item"><a class="mob-nav-link link" href="#contacts">Contacts</a></li>
+    </ul>
+  </div>
 </div>
   <main>
     <!-- Hero -->
@@ -489,6 +492,7 @@
     crossorigin="anonymous"></script>
   <script defer src="js/mobile-menu.js"></script>
   
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
