@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
     rel="stylesheet" />
   
-  <script type="module" crossorigin src="/team-project_pixel/assets/index-6ebc661d.js"></script>
-  <link rel="stylesheet" href="/team-project_pixel/assets/index-313ebc15.css">
+  <script type="module" crossorigin src="/team-project_pixel/assets/index-36e8a9cc.js"></script>
+  <link rel="stylesheet" href="/team-project_pixel/assets/index-84a65b50.css">
 </head>
 
 <body>
@@ -388,16 +388,16 @@
   </div>
 </section>
     <!-- Sign up -->
-    <section class="sp-section section" id="sign-up">
+    <section class="su-section section" id="sign-up">
   <div class="container">
-    <h2 class="sp-title">Sign <span>Up</span></h2>
+    <h2 class="su-title">Sign <span>Up</span></h2>
     <p class="su-paragraf">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
     <form>
-      <input class="su-input" type="text" id="name" placeholder="Enter your name" required />
-      <input class="su-input" type="email" id="email" placeholder="Enter your email" required />
+      <input class="su-input" type="text" id="name" placeholder="Enter your name" pattern="[A-Za-zА-Яа-яЁё\s]{2,}" />
+      <input class="su-input" type="email" id="email" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
       <textarea class="su-text-area" name="message" id="message" placeholder="Message" required></textarea>
       <button class="su-button" type="submit">Send</button>
       <p class="policy-paragraf">
